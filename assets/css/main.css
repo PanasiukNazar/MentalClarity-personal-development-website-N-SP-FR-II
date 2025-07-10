@@ -1,11 +1,11 @@
 /* Fonts */
 :root {
-    --default-font: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto,
-        'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
-    --heading-font: 'Raleway', sans-serif;
-    --nav-font: 'Poppins', sans-serif;
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -13,7 +13,7 @@
     --background-color: #ffffff; /* Background color for the entire website, including individual sections */
     --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
     --heading-color: #0b2341; /* Color for headings, subheadings and title throughout the website */
-    --accent-color: #ed502e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --accent-color: #fdd20eff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
     --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
     --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -21,11 +21,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
     --nav-color: #444444; /* The default color of the main navmenu links */
-    --nav-hover-color: #ed502e; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-hover-color: #fdd20eff; /* Applied to main navmenu links when they are hovered over or active */
     --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
     --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
     --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #ed502e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+    --nav-dropdown-hover-color: #fdd20eff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -109,7 +109,7 @@ h6 {
 }
 
 .php-email-form .loading:before {
-    content: '';
+    content: "";
     display: inline-block;
     border-radius: 50%;
     width: 24px;
@@ -558,7 +558,7 @@ h6 {
     border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type='email'] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
     border: 0;
     padding: 4px;
     width: 100%;
@@ -566,11 +566,11 @@ h6 {
     color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type='email']:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
     outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type='submit'] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
     border: 0;
     font-size: 16px;
     padding: 0 20px;
@@ -581,7 +581,7 @@ h6 {
     border-radius: 0 4px 4px 0;
 }
 
-.footer .footer-newsletter .newsletter-form input[type='submit']:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -732,7 +732,7 @@ h6 {
 }
 
 .page-title nav ol li + li::before {
-    content: '/';
+    content: "/";
     display: inline-block;
     padding-right: 10px;
     color: color-mix(in srgb, var(--default-color), transparent 70%);
@@ -778,7 +778,7 @@ section,
 }
 
 .section-title h2::after {
-    content: '';
+    content: "";
     width: 120px;
     height: 1px;
     display: inline-block;
@@ -832,7 +832,7 @@ section,
 }
 
 .hero .carousel-item:before {
-    content: '';
+    content: "";
     background: color-mix(in srgb, var(--background-color), transparent 30%);
     position: absolute;
     inset: 0;
@@ -840,7 +840,7 @@ section,
 }
 
 .hero .carousel-item::before {
-    content: '';
+    content: "";
     background-color: color-mix(
         in srgb,
         var(--background-color),
@@ -1122,7 +1122,7 @@ section,
 
 .services .service-item .icon::before {
     position: absolute;
-    content: '';
+    content: "";
     left: -8px;
     top: -8px;
     height: 100%;
@@ -1307,7 +1307,7 @@ section,
 }
 
 .call-to-action:before {
-    content: '';
+    content: "";
     background: color-mix(in srgb, var(--background-color), transparent 50%);
     position: absolute;
     inset: 0;
@@ -1725,8 +1725,8 @@ section,
     }
 }
 
-.contact .php-email-form input[type='text'],
-.contact .php-email-form input[type='email'],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
     font-size: 14px;
     padding: 10px 15px;
@@ -1737,19 +1737,19 @@ section,
     border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type='text']:focus,
-.contact .php-email-form input[type='email']:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
     border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type='text']::placeholder,
-.contact .php-email-form input[type='email']::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
     color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type='submit'] {
+.contact .php-email-form button[type="submit"] {
     color: var(--contrast-color);
     background: var(--accent-color);
     border: 0;
@@ -1758,7 +1758,7 @@ section,
     border-radius: 50px;
 }
 
-.contact .php-email-form button[type='submit']:hover {
+.contact .php-email-form button[type="submit"]:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -1973,7 +1973,7 @@ section,
 .starter-section {
     /* Add your styles here */
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 .cookie-wrapper {
     position: fixed;
@@ -2002,12 +2002,12 @@ section,
     display: none;
 }
 header i {
-    color: #ed502e;
+    color: #fdd20eff;
     font-size: 32px;
     text-align: center;
 }
 header h2 {
-    color: #ed502e;
+    color: #fdd20eff;
     font-weight: 500;
     text-align: center;
 }
@@ -2015,7 +2015,7 @@ header h2 {
     text-align: center;
 }
 .data p a {
-    color: #ed502e;
+    color: #fdd20eff;
     text-decoration: none;
     text-align: center !important;
 }
@@ -2027,10 +2027,10 @@ header h2 {
     text-align: center;
 }
 .buttons .cookie-button {
-    border: 2px solid #ed502e;
+    border: 2px solid #fdd20eff;
     color: #fff;
     padding: 8px 0;
-    background: #ed502e;
+    background: #fdd20eff;
     cursor: pointer;
     width: calc(100% / 2 - 10px);
     transition: all 0.2s ease;
@@ -2039,15 +2039,15 @@ header h2 {
 }
 .buttons #acceptBtn:hover {
     background-color: transparent;
-    color: #ed502e;
+    color: #fdd20eff;
 }
 #declineBtn {
     background-color: #fff;
-    color: #ed502e;
+    color: #fdd20eff;
     border-radius: 30px;
 }
 #declineBtn:hover {
-    background-color: #ed502e;
+    background-color: #fdd20eff;
     color: #fff;
 }
 #result {
